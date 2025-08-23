@@ -1,6 +1,6 @@
 {
   "version": "1.1.1-TE.5.GPU-SNAPSHOT",
-  "timestamp": 1755935617906,
+  "timestamp": 1755937914062,
   "model": {
     "id": 2,
     "class": "heronarts.lx.structure.LXStructure",
@@ -12625,22 +12625,22 @@
               "attack": 0.0,
               "release": 437.47287494574994,
               "slope": 6.0,
-              "band-1": 0.3707416710851029,
-              "band-2": 0.4224758878451077,
-              "band-3": 0.45150481018882094,
-              "band-4": 0.4879577906052647,
-              "band-5": 0.42357222095249314,
-              "band-6": 0.20294448367481477,
-              "band-7": 0.14217965928798504,
-              "band-8": 0.032458499850264055,
-              "band-9": 0.03323997175635596,
-              "band-10": 0.04029703793537698,
-              "band-11": 0.29844709608679787,
-              "band-12": 0.2958653614007035,
-              "band-13": 0.0,
-              "band-14": 0.0,
-              "band-15": 0.003021240299069028,
-              "band-16": 0.031587271049236754
+              "band-1": 0.2637935285563727,
+              "band-2": 0.3515985519670829,
+              "band-3": 0.3775058936561986,
+              "band-4": 0.43172268206812203,
+              "band-5": 0.39473697118787676,
+              "band-6": 0.21316294037903327,
+              "band-7": 0.22076106331599765,
+              "band-8": 0.18754895856068998,
+              "band-9": 0.17954176634020202,
+              "band-10": 0.38041438885469336,
+              "band-11": 0.2915025596027544,
+              "band-12": 0.23003960924971734,
+              "band-13": 0.19526866349829375,
+              "band-14": 0.014781582057016629,
+              "band-15": 0.0,
+              "band-16": 0.0
             },
             "children": {}
           }
@@ -12919,7 +12919,7 @@
               "transitionEnabled": false,
               "transitionTimeSecs": 5.0,
               "transitionBlendMode": 0,
-              "focusedPattern": 2,
+              "focusedPattern": 0,
               "triggerPatternCycle": false,
               "launchPatternCycle": false
             },
@@ -12943,7 +12943,7 @@
             },
             "effects": [],
             "clips": [],
-            "patternIndex": 2,
+            "patternIndex": 0,
             "patterns": [
               {
                 "id": 472055534,
@@ -13148,6 +13148,74 @@
                 "children": {
                   "modulation": {
                     "id": 472112033,
+                    "class": "heronarts.lx.modulation.LXModulationEngine",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "Modulation"
+                    },
+                    "children": {},
+                    "modulators": [],
+                    "modulations": [],
+                    "triggers": []
+                  }
+                },
+                "deviceVersion": -1,
+                "effects": [],
+                "defaults": {}
+              },
+              {
+                "id": 472131924,
+                "class": "titanicsend.pattern.arta.ScaredGhostPattern",
+                "internal": {
+                  "modulationColor": 0,
+                  "modulationControlsExpanded": true,
+                  "modulationsExpanded": true,
+                  "expanded": true,
+                  "expandedCue": true,
+                  "expandedAux": true,
+                  "modulationExpanded": false
+                },
+                "parameters": {
+                  "label": "ScaredGhost",
+                  "midiFilter/enabled": true,
+                  "midiFilter/channel": 16,
+                  "midiFilter/channel/name": "OMNI",
+                  "midiFilter/minNote": 0,
+                  "midiFilter/noteRange": 128,
+                  "midiFilter/minVelocity": 1,
+                  "midiFilter/velocityRange": 127,
+                  "view": 0,
+                  "viewPriority": 0,
+                  "enabled": true,
+                  "recall": false,
+                  "launch": false,
+                  "compositeBlend": 0,
+                  "compositeLevel": 1.0,
+                  "hasCustomCycleTime": false,
+                  "customCycleTimeSecs": 60.0,
+                  "autoMute": false,
+                  "cueActive": false,
+                  "auxActive": false,
+                  "setDefaults": false,
+                  "GSize": 0.6000000238418579,
+                  "FloatSpeed": 1.0,
+                  "FloatAmount": 0.30000001192092896,
+                  "Float": true,
+                  "Eyes": true,
+                  "Twist": 0.0,
+                  "Color": 0,
+                  "ColorSwap": true,
+                  "SwapSpeed": 0.800000011920929,
+                  "PANIC": false,
+                  "compositeMode": 0
+                },
+                "children": {
+                  "modulation": {
+                    "id": 472131925,
                     "class": "heronarts.lx.modulation.LXModulationEngine",
                     "internal": {
                       "modulationColor": 0,
@@ -40167,8 +40235,8 @@
                   "te_color/blendMode": 0,
                   "te_color/blendMode/name": "OKLAB",
                   "te_color/offset": 0.0,
-                  "Bloom": 5.0,
                   "Zoom": 0.7,
+                  "Bloom": 5.0,
                   "compositeMode": 0
                 },
                 "children": {
@@ -47217,8 +47285,8 @@
                   "te_color/blendMode": 0,
                   "te_color/blendMode/name": "OKLAB",
                   "te_color/offset": 0.0,
-                  "Bloom": 5.0,
                   "Zoom": 0.7,
+                  "Bloom": 5.0,
                   "compositeMode": 0
                 },
                 "children": {
@@ -52282,11 +52350,11 @@
                   "te_color/blendMode": 0,
                   "te_color/blendMode/name": "OKLAB",
                   "te_color/offset": 0.0,
-                  "Energy": 0.0,
                   "Double Layer": false,
-                  "Width": 0.5,
-                  "Glow": 0.1,
+                  "Energy": 0.0,
                   "Double Speed": false,
+                  "Glow": 0.1,
+                  "Width": 0.5,
                   "compositeMode": 0
                 },
                 "children": {
