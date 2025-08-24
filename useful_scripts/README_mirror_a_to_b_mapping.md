@@ -14,24 +14,29 @@ This script takes carefully mapped strips from one side and applies the same con
 ## Usage
 
 ```bash
-python mirror_a_to_b_mapping.py <from_side> <to_side> [min_strip]
+python mirror_a_to_b_mapping.py <project_file> <from_side> <to_side> [min_strip] [--single]
 ```
 
 ### Arguments
+- **project_file**: Path to the .lxp project file
 - **from_side**: Source side (`a` or `b`)
 - **to_side**: Target side (`a` or `b`)  
 - **min_strip**: Minimum strip number to process (optional, defaults to 1)
+- **--single**: Mirror only the specified strip number (optional)
 
 ### Examples
 ```bash
 # Mirror A-side to B-side for strips 44+
-python mirror_a_to_b_mapping.py a b 44
+python mirror_a_to_b_mapping.py BM2024_Pacman.lxp a b 44
 
 # Mirror B-side to A-side for strips 50+  
-python mirror_a_to_b_mapping.py b a 50
+python mirror_a_to_b_mapping.py BM2024_Pacman.lxp b a 50
 
 # Mirror A-side to B-side for all strips
-python mirror_a_to_b_mapping.py a b
+python mirror_a_to_b_mapping.py BM2024_Pacman.lxp a b
+
+# Mirror only strip 45 from A-side to B-side
+python mirror_a_to_b_mapping.py BM2024_Pacman.lxp a b 45 --single
 ```
 
 ## What It Does

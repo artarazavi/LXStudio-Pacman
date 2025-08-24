@@ -8,7 +8,16 @@ Splits LED strips by doing EXACTLY what we do manually:
 2. Change its points value
 3. Copy the entire strip section and modify it for overflow
 
-Usage: python split_strip.py <side> <strip_number>
+Usage: python split_strip.py <project_file> <side> <strip_number>
+
+Arguments:
+    project_file: Path to the .lxp project file
+    side: Strip side ('a' or 'b')
+    strip_number: Number of the strip to split
+
+Examples:
+    python split_strip.py BM2024_Pacman.lxp a 45    # Split A-side strip 45
+    python split_strip.py BM2024_Pacman.lxp b 50    # Split B-side strip 50
 """
 
 import sys
@@ -16,19 +25,23 @@ import re
 import os
 
 def main():
-    if len(sys.argv) != 3:
-        print("Usage: python split_strip.py <side> <strip_number>")
+    if len(sys.argv) != 4:
+        print("Usage: python split_strip.py <project_file> <side> <strip_number>")
+        print("Examples:")
+        print("  python split_strip.py BM2024_Pacman.lxp a 45    # Split A-side strip 45")
+        print("  python split_strip.py BM2024_Pacman.lxp b 50    # Split B-side strip 50")
         sys.exit(1)
     
-    side = sys.argv[1].lower()
-    strip_num = int(sys.argv[2])
+    project_file = sys.argv[1]
+    side = sys.argv[2].lower()
+    strip_num = int(sys.argv[3])
     
     if side == 'a':
         strip_label = f"Strip {strip_num}"
     else:
         strip_label = f"Strip {strip_num}b"
     
-    project_file = "/Users/artarazavi/projects/LXStudio-TE/te-app/Projects/BM2024_Pacman.lxp"
+    # project_file is now passed as first argument
     
     # Read file
     with open(project_file, 'r') as f:
