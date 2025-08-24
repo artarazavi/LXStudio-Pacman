@@ -7,17 +7,20 @@ Generic script to mirror strip configurations between sides (A ↔ B).
 Handles splits and coordinate mapping while preserving target side specifics.
 
 Usage:
-    python mirror_a_to_b_mapping.py <from_side> <to_side> [min_strip]
+    python mirror_a_to_b_mapping.py <project_file> <from_side> <to_side> [min_strip] [--single]
 
 Arguments:
+    project_file: Path to the .lxp project file
     from_side: Source side ('a' or 'b')
     to_side: Target side ('a' or 'b') 
     min_strip: Minimum strip number to process (optional, defaults to 1)
+    --single: Mirror only the specified strip number
 
 Examples:
-    python mirror_a_to_b_mapping.py a b 44    # Mirror A→B for strips 44+
-    python mirror_a_to_b_mapping.py b a 50    # Mirror B→A for strips 50+
-    python mirror_a_to_b_mapping.py a b       # Mirror A→B for all strips
+    python mirror_a_to_b_mapping.py BM2024_Pacman.lxp a b 44              # Mirror A→B for strips 44+
+    python mirror_a_to_b_mapping.py BM2024_Pacman.lxp b a 50              # Mirror B→A for strips 50+
+    python mirror_a_to_b_mapping.py BM2024_Pacman.lxp a b                 # Mirror A→B for all strips
+    python mirror_a_to_b_mapping.py BM2024_Pacman.lxp a b 45 --single     # Mirror only strip 45 from A to B
 """
 
 import sys
@@ -147,22 +150,23 @@ def update_strip_coordinates(content, strip_label, new_x):
     return content
 
 def main():
-    if len(sys.argv) < 3:
-        print("Usage: python mirror_a_to_b_mapping.py <from_side> <to_side> [min_strip] [--single]")
+    if len(sys.argv) < 4:
+        print("Usage: python mirror_a_to_b_mapping.py <project_file> <from_side> <to_side> [min_strip] [--single]")
         print("Examples:")
-        print("  python mirror_a_to_b_mapping.py a b 44           # Mirror strips 44+ from A to B")
-        print("  python mirror_a_to_b_mapping.py a b 45 --single  # Mirror only strip 45 from A to B")
+        print("  python mirror_a_to_b_mapping.py BM2024_Pacman.lxp a b 44           # Mirror strips 44+ from A to B")
+        print("  python mirror_a_to_b_mapping.py BM2024_Pacman.lxp a b 45 --single  # Mirror only strip 45 from A to B")
         sys.exit(1)
     
-    from_side = sys.argv[1].lower()
-    to_side = sys.argv[2].lower()
-    min_strip = int(sys.argv[3]) if len(sys.argv) > 3 else 1
+    project_file = sys.argv[1]
+    from_side = sys.argv[2].lower()
+    to_side = sys.argv[3].lower()
+    min_strip = int(sys.argv[4]) if len(sys.argv) > 4 else 1
     
     # Check for --single flag
     single_strip_mode = '--single' in sys.argv
-    if single_strip_mode and len(sys.argv) < 4:
+    if single_strip_mode and len(sys.argv) < 5:
         print("❌ --single mode requires a strip number")
-        print("Example: python mirror_a_to_b_mapping.py a b 45 --single")
+        print("Example: python mirror_a_to_b_mapping.py BM2024_Pacman.lxp a b 45 --single")
         sys.exit(1)
     
     if from_side not in ['a', 'b'] or to_side not in ['a', 'b']:
@@ -173,7 +177,7 @@ def main():
         print("❌ From and to sides must be different")
         sys.exit(1)
     
-    project_file = "/Users/artarazavi/projects/LXStudio-TE/te-app/Projects/BM2024_Pacman.lxp"
+    # project_file is now passed as first argument
     
     if not os.path.exists(project_file):
         print(f"❌ Project file not found: {project_file}")
@@ -275,7 +279,7 @@ def main():
             
             try:
                 result = subprocess.run([
-                    'python3', 'useful_scripts/split_strip.py', to_side, str(strip_num)
+                    'python3', 'useful_scripts/split_strip.py', project_file, to_side, str(strip_num)
                 ], capture_output=True, text=True, cwd='/Users/artarazavi/projects/LXStudio-TE')
                 
                 if result.returncode == 0:

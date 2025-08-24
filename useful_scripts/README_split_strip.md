@@ -12,11 +12,12 @@ When an LED strip has more than 170 LEDs (170 × 3 channels = 510 channels), it 
 ## Usage
 
 ```bash
-python split_strip.py <side> <strip_number>
+python split_strip.py <project_file> <side> <strip_number>
 ```
 
 ### Parameters
 
+- **project_file**: Path to the .lxp project file
 - **side**: `a` or `b` (case insensitive)
   - `a` for A-side strips (e.g., "Strip 36")
   - `b` for B-side strips (e.g., "Strip 36b")
@@ -26,16 +27,16 @@ python split_strip.py <side> <strip_number>
 
 ```bash
 # Split Strip 36 on A-side
-python split_strip.py a 36
+python split_strip.py BM2024_Pacman.lxp a 36
 
 # Split Strip 42 on B-side  
-python split_strip.py b 42
+python split_strip.py BM2024_Pacman.lxp b 42
 ```
 
 ## What the Script Does
 
-1. **Validates Input**: Checks that the side and strip number are valid
-2. **Locates Strip**: Finds the specified strip in `BM2024_Pacman.lxp`
+1. **Validates Input**: Checks that the project file exists and side/strip number are valid
+2. **Locates Strip**: Finds the specified strip in the project file
 3. **Calculates Split**: Determines optimal split point based on universe capacity
 4. **Creates Backup**: Automatically backs up the project file
 5. **Performs Split**: 
@@ -70,7 +71,7 @@ python split_strip.py b 42
 
 ### Backup Safety
 - The script automatically creates a backup file before making changes
-- Backup is saved as `BM2024_Pacman.lxp.backup`
+- Backup is saved as `<project_file>.backup`
 - If something goes wrong, you can restore from this backup
 
 ### Strip Naming Convention
@@ -86,8 +87,8 @@ python split_strip.py b 42
 
 ## Files Modified
 
-- **Target**: `te-app/Projects/BM2024_Pacman.lxp`
-- **Backup**: `te-app/Projects/BM2024_Pacman.lxp.backup`
+- **Target**: The specified project file (e.g., `BM2024_Pacman.lxp`)
+- **Backup**: `<project_file>.backup` (e.g., `BM2024_Pacman.lxp.backup`)
 
 ## Error Handling
 
