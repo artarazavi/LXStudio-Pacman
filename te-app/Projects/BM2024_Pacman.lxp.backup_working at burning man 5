@@ -1,6 +1,6 @@
 {
   "version": "1.1.1-TE.5.GPU-SNAPSHOT",
-  "timestamp": 1756121846675,
+  "timestamp": 1756121363707,
   "model": {
     "id": 2,
     "class": "heronarts.lx.structure.LXStructure",
@@ -12772,22 +12772,22 @@
               "attack": 0.0,
               "release": 437.47287494574994,
               "slope": 6.0,
-              "band-1": 0.3937695457512379,
-              "band-2": 0.4545608594057394,
-              "band-3": 0.46195111694218527,
-              "band-4": 0.4517207516966133,
-              "band-5": 0.3793892193863174,
-              "band-6": 0.19450902521999025,
-              "band-7": 0.1777578354149757,
-              "band-8": 0.030171392281535425,
-              "band-9": 0.006519448447012244,
-              "band-10": 0.0,
-              "band-11": 0.0,
-              "band-12": 0.0,
-              "band-13": 0.0,
-              "band-14": 0.003625016196701858,
-              "band-15": 0.023314492182027302,
-              "band-16": 0.049831359816670306
+              "band-1": 0.45293646103537144,
+              "band-2": 0.5321783188340421,
+              "band-3": 0.5605112536162786,
+              "band-4": 0.6127587382512811,
+              "band-5": 0.5986696856328564,
+              "band-6": 0.6504926633226795,
+              "band-7": 0.6120369883194039,
+              "band-8": 0.4996713302572774,
+              "band-9": 0.5619324694442855,
+              "band-10": 0.6237911643585532,
+              "band-11": 0.45022204375888675,
+              "band-12": 0.3693515123907215,
+              "band-13": 0.2887964943472566,
+              "band-14": 0.18730880235887215,
+              "band-15": 0.10254808023262729,
+              "band-16": 0.11123713113270739
             },
             "children": {}
           }
@@ -13066,7 +13066,7 @@
               "transitionEnabled": false,
               "transitionTimeSecs": 5.0,
               "transitionBlendMode": 0,
-              "focusedPattern": 0,
+              "focusedPattern": 2,
               "triggerPatternCycle": false,
               "launchPatternCycle": false
             },
@@ -13090,7 +13090,7 @@
             },
             "effects": [],
             "clips": [],
-            "patternIndex": 0,
+            "patternIndex": 2,
             "patterns": [
               {
                 "id": 472055534,
@@ -13288,7 +13288,7 @@
                   "Twist": 0.0,
                   "AutoTwist": false,
                   "TwistSpeed": 1.0,
-                  "Color": 0,
+                  "Color": 4,
                   "ColorShift": true,
                   "ColorSpeed": 2.0,
                   "FlipFace": false,
