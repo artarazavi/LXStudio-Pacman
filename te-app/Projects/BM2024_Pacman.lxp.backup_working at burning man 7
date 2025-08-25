@@ -1,6 +1,6 @@
 {
   "version": "1.1.1-TE.5.GPU-SNAPSHOT",
-  "timestamp": 1756124585256,
+  "timestamp": 1756123599869,
   "model": {
     "id": 2,
     "class": "heronarts.lx.structure.LXStructure",
@@ -515,7 +515,7 @@
           "scale": 1.0,
           "hasCustomPointSize": false,
           "pointSize": 5.0,
-          "selected": true,
+          "selected": false,
           "deactivate": false,
           "enabled": true,
           "brightness": 1.0,
@@ -5562,7 +5562,7 @@
           "scale": 1.0,
           "hasCustomPointSize": false,
           "pointSize": 5.0,
-          "selected": false,
+          "selected": true,
           "deactivate": false,
           "enabled": true,
           "brightness": 1.0,
@@ -12919,22 +12919,22 @@
               "attack": 0.0,
               "release": 437.47287494574994,
               "slope": 6.0,
-              "band-1": 0.45771324091451693,
-              "band-2": 0.5790460351996496,
-              "band-3": 0.6414299394612752,
-              "band-4": 0.7034813624863436,
-              "band-5": 0.6849577359572541,
-              "band-6": 0.6456412936406806,
-              "band-7": 0.46825976672101177,
-              "band-8": 0.2869538238279308,
-              "band-9": 0.2709740834079307,
-              "band-10": 0.42078785570051735,
-              "band-11": 0.3336779066024885,
-              "band-12": 0.3663305284537085,
-              "band-13": 0.35802164692617,
-              "band-14": 0.17503735174568025,
-              "band-15": 0.22952728105915554,
-              "band-16": 0.18939050306185423
+              "band-1": 0.43953423487619947,
+              "band-2": 0.5745947773191478,
+              "band-3": 0.6473462075348535,
+              "band-4": 0.7200556944210585,
+              "band-5": 0.6425002054318303,
+              "band-6": 0.5126794594268032,
+              "band-7": 0.3896662306939366,
+              "band-8": 0.25710753990358504,
+              "band-9": 0.26091658686828223,
+              "band-10": 0.35116905985702296,
+              "band-11": 0.427227967536151,
+              "band-12": 0.31675365861738347,
+              "band-13": 0.21574390163748447,
+              "band-14": 0.19077191420744877,
+              "band-15": 0.17737260141136224,
+              "band-16": 0.2042469430412407
             },
             "children": {}
           }
@@ -13435,7 +13435,7 @@
                   "Twist": 0.0,
                   "AutoTwist": false,
                   "TwistSpeed": 1.0,
-                  "Color": 4,
+                  "Color": 0,
                   "ColorShift": true,
                   "ColorSpeed": 2.0,
                   "FlipFace": false,
@@ -13508,7 +13508,7 @@
                   "EyeAnimate": false,
                   "EyeRight": true,
                   "Twist": 0.0,
-                  "Color": 0,
+                  "Color": 4,
                   "ColorShift": true,
                   "ColorSpeed": 2.0,
                   "PANIC": false,
@@ -13718,7 +13718,7 @@
                   "FloatAmount": 0.30000001192092896,
                   "Float": true,
                   "Twist": 0.0,
-                  "Color": 4,
+                  "Color": 2,
                   "ColorShift": true,
                   "ColorSpeed": 2.0,
                   "PANIC": false,
@@ -14111,7 +14111,7 @@
               "transitionEnabled": false,
               "transitionTimeSecs": 5.0,
               "transitionBlendMode": 0,
-              "focusedPattern": 0,
+              "focusedPattern": 3,
               "triggerPatternCycle": false,
               "launchPatternCycle": false
             },
@@ -14135,7 +14135,7 @@
             },
             "effects": [],
             "clips": [],
-            "patternIndex": 0,
+            "patternIndex": 3,
             "patterns": [
               {
                 "id": 427002,
@@ -20863,7 +20863,7 @@
               "transitionEnabled": false,
               "transitionTimeSecs": 5.0,
               "transitionBlendMode": 0,
-              "focusedPattern": 0,
+              "focusedPattern": 7,
               "triggerPatternCycle": false,
               "launchPatternCycle": false
             },
@@ -20887,7 +20887,7 @@
             },
             "effects": [],
             "clips": [],
-            "patternIndex": 0,
+            "patternIndex": 7,
             "patterns": [
               {
                 "id": 426253,
@@ -27615,7 +27615,7 @@
               "transitionEnabled": false,
               "transitionTimeSecs": 5.0,
               "transitionBlendMode": 0,
-              "focusedPattern": 0,
+              "focusedPattern": 17,
               "triggerPatternCycle": false,
               "launchPatternCycle": false
             },
@@ -27639,7 +27639,7 @@
             },
             "effects": [],
             "clips": [],
-            "patternIndex": 0,
+            "patternIndex": 17,
             "patterns": [
               {
                 "id": 132858,
@@ -32652,7 +32652,7 @@
               "transitionEnabled": false,
               "transitionTimeSecs": 5.0,
               "transitionBlendMode": 0,
-              "focusedPattern": 0,
+              "focusedPattern": 16,
               "triggerPatternCycle": false,
               "launchPatternCycle": false
             },
@@ -32676,7 +32676,7 @@
             },
             "effects": [],
             "clips": [],
-            "patternIndex": 0,
+            "patternIndex": 16,
             "patterns": [
               {
                 "id": 427521,
@@ -37689,7 +37689,7 @@
               "transitionEnabled": false,
               "transitionTimeSecs": 5.0,
               "transitionBlendMode": 0,
-              "focusedPattern": 0,
+              "focusedPattern": 10,
               "triggerPatternCycle": false,
               "launchPatternCycle": false
             },
@@ -37713,7 +37713,7 @@
             },
             "effects": [],
             "clips": [],
-            "patternIndex": 0,
+            "patternIndex": 10,
             "patterns": [
               {
                 "id": 472125677,
@@ -39272,7 +39272,7 @@
               "transitionEnabled": false,
               "transitionTimeSecs": 5.0,
               "transitionBlendMode": 0,
-              "focusedPattern": 0,
+              "focusedPattern": 2,
               "triggerPatternCycle": false,
               "launchPatternCycle": false
             },
@@ -39296,7 +39296,7 @@
             },
             "effects": [],
             "clips": [],
-            "patternIndex": 0,
+            "patternIndex": 2,
             "patterns": [
               {
                 "id": 472118331,
