@@ -1,0 +1,2654 @@
+# COMPREHENSIVE STRIP FIXES LOG
+# Generated: 2025-08-25 01:36:51
+# Fixes needed: Reverse corrections + Universe overflow splits
+# Correct zigzag: Odd strips = reverse:true, Even strips = reverse:false
+
+============================================================
+REVERSE FIXES SUMMARY
+============================================================
+
+============================================================
+OVERFLOW FIXES SUMMARY
+============================================================
+Strip: Strip 41b
+Original: 159 LEDs, Universe 86
+Flow: right→left
+Split Configuration:
+  Original: 25 LEDs at x=20.0
+  Overflow: 134 LEDs at x=0.0
+  Offset: 20.0 units left
+  Universes: 86 + 87
+----------------------------------------
+Strip: Strip 42b
+Original: 159 LEDs, Universe 87
+Flow: left→right
+Split Configuration:
+  Original: 36 LEDs at x=20.0
+  Overflow: 123 LEDs at x=48.8
+  Offset: 28.8 units right
+  Universes: 87 + 88
+----------------------------------------
+Strip: Strip 43b
+Original: 157 LEDs, Universe 88
+Flow: right→left
+Split Configuration:
+  Original: 47 LEDs at x=20.0
+  Overflow: 110 LEDs at x=-17.6
+  Offset: 37.6 units left
+  Universes: 88 + 89
+----------------------------------------
+Strip: Strip 55b
+Original: 125 LEDs, Universe 99
+Flow: right→left
+Split Configuration:
+  Original: 1 LEDs at x=33.0
+  Overflow: 124 LEDs at x=32.2
+  Offset: 0.8 units left
+  Universes: 99 + 100
+----------------------------------------
+
+============================================================
+DETAILED LOG (JSON)
+============================================================
+[
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 1b",
+      "strip_num": 1.0,
+      "base_strip_num": 1,
+      "points": 25,
+      "universe": 54,
+      "dmx_channel": 1,
+      "x": 71.0,
+      "y": 6.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 2b",
+      "strip_num": 2.0,
+      "base_strip_num": 2,
+      "points": 43,
+      "universe": 54,
+      "dmx_channel": 76,
+      "x": 64.0,
+      "y": 8.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 3b",
+      "strip_num": 3.0,
+      "base_strip_num": 3,
+      "points": 57,
+      "universe": 54,
+      "dmx_channel": 205,
+      "x": 59.0,
+      "y": 10.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 4b",
+      "strip_num": 4.0,
+      "base_strip_num": 4,
+      "points": 45,
+      "universe": 54,
+      "dmx_channel": 376,
+      "x": 55.0,
+      "y": 11.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 4.5b",
+      "strip_num": 4.5,
+      "base_strip_num": 4,
+      "points": 22,
+      "universe": 55,
+      "dmx_channel": 1,
+      "x": 91.0,
+      "y": 11.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 5b",
+      "strip_num": 5.0,
+      "base_strip_num": 5,
+      "points": 75,
+      "universe": 55,
+      "dmx_channel": 67,
+      "x": 52.0,
+      "y": 13.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 6b",
+      "strip_num": 6.0,
+      "base_strip_num": 6,
+      "points": 73,
+      "universe": 55,
+      "dmx_channel": 292,
+      "x": 48.0,
+      "y": 15.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 6.5b",
+      "strip_num": 6.5,
+      "base_strip_num": 6,
+      "points": 12,
+      "universe": 56,
+      "dmx_channel": 1,
+      "x": 106.4,
+      "y": 15.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 7b",
+      "strip_num": 7.0,
+      "base_strip_num": 7,
+      "points": 93,
+      "universe": 56,
+      "dmx_channel": 37,
+      "x": 45.0,
+      "y": 17.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 8b",
+      "strip_num": 8.0,
+      "base_strip_num": 8,
+      "points": 65,
+      "universe": 56,
+      "dmx_channel": 316,
+      "x": 43.0,
+      "y": 19.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 8.5b",
+      "strip_num": 8.5,
+      "base_strip_num": 8,
+      "points": 36,
+      "universe": 57,
+      "dmx_channel": 1,
+      "x": 95.0,
+      "y": 19.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 9b",
+      "strip_num": 9.0,
+      "base_strip_num": 9,
+      "points": 107,
+      "universe": 57,
+      "dmx_channel": 103,
+      "x": 40.0,
+      "y": 21.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 10b",
+      "strip_num": 10.0,
+      "base_strip_num": 10,
+      "points": 29,
+      "universe": 57,
+      "dmx_channel": 424,
+      "x": 37.0,
+      "y": 23.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 10.5b",
+      "strip_num": 10.5,
+      "base_strip_num": 10,
+      "points": 84,
+      "universe": 58,
+      "dmx_channel": 1,
+      "x": 60.2,
+      "y": 23.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 11b",
+      "strip_num": 11.0,
+      "base_strip_num": 11,
+      "points": 86,
+      "universe": 58,
+      "dmx_channel": 253,
+      "x": 61.4,
+      "y": 25.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 11.5b",
+      "strip_num": 11.5,
+      "base_strip_num": 11,
+      "points": 33,
+      "universe": 59,
+      "dmx_channel": 1,
+      "x": 35.0,
+      "y": 25.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 12b",
+      "strip_num": 12.0,
+      "base_strip_num": 12,
+      "points": 123,
+      "universe": 59,
+      "dmx_channel": 100,
+      "x": 34.0,
+      "y": 27.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 13b",
+      "strip_num": 13.0,
+      "base_strip_num": 13,
+      "points": 127,
+      "universe": 60,
+      "dmx_channel": 1,
+      "x": 32.0,
+      "y": 29.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 14b",
+      "strip_num": 14.0,
+      "base_strip_num": 14,
+      "points": 43,
+      "universe": 60,
+      "dmx_channel": 382,
+      "x": 31.0,
+      "y": 30.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 14.5b",
+      "strip_num": 14.5,
+      "base_strip_num": 14,
+      "points": 88,
+      "universe": 61,
+      "dmx_channel": 1,
+      "x": 65.39999999999998,
+      "y": 30.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 15b",
+      "strip_num": 15.0,
+      "base_strip_num": 15,
+      "points": 82,
+      "universe": 61,
+      "dmx_channel": 265,
+      "x": 71.39999999999998,
+      "y": 32.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 15.5b",
+      "strip_num": 15.5,
+      "base_strip_num": 15,
+      "points": 53,
+      "universe": 62,
+      "dmx_channel": 1,
+      "x": 29.0,
+      "y": 32.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 16b",
+      "strip_num": 16.0,
+      "base_strip_num": 16,
+      "points": 117,
+      "universe": 62,
+      "dmx_channel": 160,
+      "x": 28.0,
+      "y": 34.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 16.5b",
+      "strip_num": 16.5,
+      "base_strip_num": 16,
+      "points": 20,
+      "universe": 63,
+      "dmx_channel": 1,
+      "x": 121.60000000000002,
+      "y": 34.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 17b",
+      "strip_num": 17.0,
+      "base_strip_num": 17,
+      "points": 141,
+      "universe": 63,
+      "dmx_channel": 61,
+      "x": 27.0,
+      "y": 36.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 18b",
+      "strip_num": 18.0,
+      "base_strip_num": 18,
+      "points": 9,
+      "universe": 63,
+      "dmx_channel": 484,
+      "x": 26.0,
+      "y": 38.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 18.5b",
+      "strip_num": 18.5,
+      "base_strip_num": 18,
+      "points": 134,
+      "universe": 64,
+      "dmx_channel": 1,
+      "x": 33.19999999999999,
+      "y": 38.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 19b",
+      "strip_num": 19.0,
+      "base_strip_num": 19,
+      "points": 36,
+      "universe": 64,
+      "dmx_channel": 403,
+      "x": 112.19999999999999,
+      "y": 40.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 19.5b",
+      "strip_num": 19.5,
+      "base_strip_num": 19,
+      "points": 109,
+      "universe": 65,
+      "dmx_channel": 1,
+      "x": 25.0,
+      "y": 40.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 20b",
+      "strip_num": 20.0,
+      "base_strip_num": 20,
+      "points": 149,
+      "universe": 66,
+      "dmx_channel": 1,
+      "x": 24.0,
+      "y": 42.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 21b",
+      "strip_num": 21.0,
+      "base_strip_num": 21,
+      "points": 21,
+      "universe": 66,
+      "dmx_channel": 448,
+      "x": 127.0,
+      "y": 44.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 21.5b",
+      "strip_num": 21.5,
+      "base_strip_num": 21,
+      "points": 130,
+      "universe": 67,
+      "dmx_channel": 1,
+      "x": 23.0,
+      "y": 44.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 22b",
+      "strip_num": 22.0,
+      "base_strip_num": 22,
+      "points": 40,
+      "universe": 67,
+      "dmx_channel": 391,
+      "x": 22.0,
+      "y": 46.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 22.5b",
+      "strip_num": 22.5,
+      "base_strip_num": 22,
+      "points": 113,
+      "universe": 68,
+      "dmx_channel": 1,
+      "x": 54.0,
+      "y": 46.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 23b",
+      "strip_num": 23.0,
+      "base_strip_num": 23,
+      "points": 57,
+      "universe": 68,
+      "dmx_channel": 340,
+      "x": 99.39999999999998,
+      "y": 48.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 23.5b",
+      "strip_num": 23.5,
+      "base_strip_num": 23,
+      "points": 98,
+      "universe": 69,
+      "dmx_channel": 1,
+      "x": 21.0,
+      "y": 48.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 24b",
+      "strip_num": 24.0,
+      "base_strip_num": 24,
+      "points": 72,
+      "universe": 69,
+      "dmx_channel": 295,
+      "x": 20.0,
+      "y": 50.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 24.5b",
+      "strip_num": 24.5,
+      "base_strip_num": 24,
+      "points": 85,
+      "universe": 70,
+      "dmx_channel": 1,
+      "x": 77.60000000000002,
+      "y": 50.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 25b",
+      "strip_num": 25.0,
+      "base_strip_num": 25,
+      "points": 85,
+      "universe": 70,
+      "dmx_channel": 256,
+      "x": 77.60000000000002,
+      "y": 51.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 25.5b",
+      "strip_num": 25.5,
+      "base_strip_num": 25,
+      "points": 72,
+      "universe": 71,
+      "dmx_channel": 1,
+      "x": 20.0,
+      "y": 51.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 26b",
+      "strip_num": 26.0,
+      "base_strip_num": 26,
+      "points": 159,
+      "universe": 72,
+      "dmx_channel": 1,
+      "x": 20.0,
+      "y": 53.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 27b",
+      "strip_num": 27.0,
+      "base_strip_num": 27,
+      "points": 11,
+      "universe": 72,
+      "dmx_channel": 478,
+      "x": 139.0,
+      "y": 55.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 27.5b",
+      "strip_num": 27.5,
+      "base_strip_num": 27,
+      "points": 150,
+      "universe": 73,
+      "dmx_channel": 1,
+      "x": 19.0,
+      "y": 55.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 28b",
+      "strip_num": 28.0,
+      "base_strip_num": 28,
+      "points": 20,
+      "universe": 73,
+      "dmx_channel": 451,
+      "x": 19.0,
+      "y": 57.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 28.5b",
+      "strip_num": 28.5,
+      "base_strip_num": 28,
+      "points": 141,
+      "universe": 74,
+      "dmx_channel": 1,
+      "x": 35.0,
+      "y": 57.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 29b",
+      "strip_num": 29.0,
+      "base_strip_num": 29,
+      "points": 29,
+      "universe": 74,
+      "dmx_channel": 424,
+      "x": 125.19999999999999,
+      "y": 59.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 29.5b",
+      "strip_num": 29.5,
+      "base_strip_num": 29,
+      "points": 134,
+      "universe": 75,
+      "dmx_channel": 1,
+      "x": 18.0,
+      "y": 59.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 30b",
+      "strip_num": 30.0,
+      "base_strip_num": 30,
+      "points": 36,
+      "universe": 75,
+      "dmx_channel": 403,
+      "x": 18.0,
+      "y": 61.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 30.5b",
+      "strip_num": 30.5,
+      "base_strip_num": 30,
+      "points": 127,
+      "universe": 76,
+      "dmx_channel": 1,
+      "x": 46.80000000000001,
+      "y": 61.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 31b",
+      "strip_num": 31.0,
+      "base_strip_num": 31,
+      "points": 43,
+      "universe": 76,
+      "dmx_channel": 382,
+      "x": 114.0,
+      "y": 63.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 31.5b",
+      "strip_num": 31.5,
+      "base_strip_num": 31,
+      "points": 120,
+      "universe": 77,
+      "dmx_channel": 1,
+      "x": 18.0,
+      "y": 63.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 32b",
+      "strip_num": 32.0,
+      "base_strip_num": 32,
+      "points": 163,
+      "universe": 78,
+      "dmx_channel": 1,
+      "x": 18.0,
+      "y": 65.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 33b",
+      "strip_num": 33.0,
+      "base_strip_num": 33,
+      "points": 7,
+      "universe": 78,
+      "dmx_channel": 490,
+      "x": 142.8,
+      "y": 67.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 33.5b",
+      "strip_num": 33.5,
+      "base_strip_num": 33,
+      "points": 156,
+      "universe": 79,
+      "dmx_channel": 1,
+      "x": 18.0,
+      "y": 67.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 34b",
+      "strip_num": 34.0,
+      "base_strip_num": 34,
+      "points": 14,
+      "universe": 79,
+      "dmx_channel": 469,
+      "x": 18.0,
+      "y": 69.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 34.5b",
+      "strip_num": 34.5,
+      "base_strip_num": 34,
+      "points": 149,
+      "universe": 80,
+      "dmx_channel": 1,
+      "x": 29.19999999999999,
+      "y": 69.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 35b",
+      "strip_num": 35.0,
+      "base_strip_num": 35,
+      "points": 21,
+      "universe": 80,
+      "dmx_channel": 448,
+      "x": 131.60000000000002,
+      "y": 70.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 35.5b",
+      "strip_num": 35.5,
+      "base_strip_num": 35,
+      "points": 142,
+      "universe": 81,
+      "dmx_channel": 1,
+      "x": 18.0,
+      "y": 70.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 36b",
+      "strip_num": 36.0,
+      "base_strip_num": 36,
+      "points": 28,
+      "universe": 81,
+      "dmx_channel": 427,
+      "x": 18.0,
+      "y": 72.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 36.5b",
+      "strip_num": 36.5,
+      "base_strip_num": 36,
+      "points": 135,
+      "universe": 82,
+      "dmx_channel": 1,
+      "x": 40.400000000000006,
+      "y": 72.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 37b",
+      "strip_num": 37.0,
+      "base_strip_num": 37,
+      "points": 35,
+      "universe": 82,
+      "dmx_channel": 406,
+      "x": 120.39999999999998,
+      "y": 74.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 37.5b",
+      "strip_num": 37.5,
+      "base_strip_num": 37,
+      "points": 128,
+      "universe": 83,
+      "dmx_channel": 1,
+      "x": 18.0,
+      "y": 74.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 38b",
+      "strip_num": 38.0,
+      "base_strip_num": 38,
+      "points": 163,
+      "universe": 84,
+      "dmx_channel": 1,
+      "x": 18.0,
+      "y": 76.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 39b",
+      "strip_num": 39.0,
+      "base_strip_num": 39,
+      "points": 7,
+      "universe": 84,
+      "dmx_channel": 490,
+      "x": 142.2,
+      "y": 78.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 39.5b",
+      "strip_num": 39.5,
+      "base_strip_num": 39,
+      "points": 154,
+      "universe": 85,
+      "dmx_channel": 1,
+      "x": 19.0,
+      "y": 78.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 40b",
+      "strip_num": 40.0,
+      "base_strip_num": 40,
+      "points": 16,
+      "universe": 85,
+      "dmx_channel": 463,
+      "x": 19.0,
+      "y": 80.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 40.5b",
+      "strip_num": 40.5,
+      "base_strip_num": 40,
+      "points": 145,
+      "universe": 86,
+      "dmx_channel": 1,
+      "x": 31.80000000000001,
+      "y": 80.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 41b",
+      "strip_num": 41.0,
+      "base_strip_num": 41,
+      "points": 159,
+      "universe": 86,
+      "dmx_channel": 436,
+      "x": 20.0,
+      "y": 82.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": true
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": true
+    },
+    "overflow_fix": {
+      "strip": "Strip 41b",
+      "strip_num": 41.0,
+      "base_strip_num": 41,
+      "original_points": 159,
+      "universe": 86,
+      "dmx_channel": 436,
+      "overflow_leds": 133,
+      "correct_flow": "right\u2192left",
+      "split": {
+        "original": {
+          "points": 25,
+          "x": 20.0,
+          "universe": 86,
+          "dmx_channel": 436,
+          "reverse": true
+        },
+        "overflow": {
+          "label": "Strip 41b.5",
+          "points": 134,
+          "x": 0.0,
+          "universe": 87,
+          "dmx_channel": 1,
+          "reverse": false,
+          "direction": "left",
+          "offset": 20.0
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 42b",
+      "strip_num": 42.0,
+      "base_strip_num": 42,
+      "points": 159,
+      "universe": 87,
+      "dmx_channel": 403,
+      "x": 20.0,
+      "y": 84.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": true
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": true
+    },
+    "overflow_fix": {
+      "strip": "Strip 42b",
+      "strip_num": 42.0,
+      "base_strip_num": 42,
+      "original_points": 159,
+      "universe": 87,
+      "dmx_channel": 403,
+      "overflow_leds": 122,
+      "correct_flow": "left\u2192right",
+      "split": {
+        "original": {
+          "points": 36,
+          "x": 20.0,
+          "universe": 87,
+          "dmx_channel": 403,
+          "reverse": false
+        },
+        "overflow": {
+          "label": "Strip 42b.5",
+          "points": 123,
+          "x": 48.8,
+          "universe": 88,
+          "dmx_channel": 1,
+          "reverse": true,
+          "direction": "right",
+          "offset": 28.799999999999997
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 43b",
+      "strip_num": 43.0,
+      "base_strip_num": 43,
+      "points": 157,
+      "universe": 88,
+      "dmx_channel": 370,
+      "x": 20.0,
+      "y": 86.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": true
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": true
+    },
+    "overflow_fix": {
+      "strip": "Strip 43b",
+      "strip_num": 43.0,
+      "base_strip_num": 43,
+      "original_points": 157,
+      "universe": 88,
+      "dmx_channel": 370,
+      "overflow_leds": 109,
+      "correct_flow": "right\u2192left",
+      "split": {
+        "original": {
+          "points": 47,
+          "x": 20.0,
+          "universe": 88,
+          "dmx_channel": 370,
+          "reverse": true
+        },
+        "overflow": {
+          "label": "Strip 43b.5",
+          "points": 110,
+          "x": -17.6,
+          "universe": 89,
+          "dmx_channel": 1,
+          "reverse": false,
+          "direction": "left",
+          "offset": 37.6
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 44b",
+      "strip_num": 44.0,
+      "base_strip_num": 44,
+      "points": 155,
+      "universe": 90,
+      "dmx_channel": 1,
+      "x": 21.0,
+      "y": 88.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 45b",
+      "strip_num": 45.0,
+      "base_strip_num": 45,
+      "points": 15,
+      "universe": 90,
+      "dmx_channel": 466,
+      "x": 22.0,
+      "y": 90.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 45.5b",
+      "strip_num": 45.5,
+      "base_strip_num": 45,
+      "points": 138,
+      "universe": 91,
+      "dmx_channel": 1,
+      "x": 34.0,
+      "y": 90.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 46b",
+      "strip_num": 46.0,
+      "base_strip_num": 46,
+      "points": 32,
+      "universe": 91,
+      "dmx_channel": 415,
+      "x": 118.2,
+      "y": 91.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 46.5b",
+      "strip_num": 46.5,
+      "base_strip_num": 46,
+      "points": 119,
+      "universe": 92,
+      "dmx_channel": 1,
+      "x": 23.0,
+      "y": 91.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 47b",
+      "strip_num": 47.0,
+      "base_strip_num": 47,
+      "points": 51,
+      "universe": 92,
+      "dmx_channel": 358,
+      "x": 24.0,
+      "y": 93.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 47.5b",
+      "strip_num": 47.5,
+      "base_strip_num": 47,
+      "points": 98,
+      "universe": 93,
+      "dmx_channel": 1,
+      "x": 64.8,
+      "y": 93.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 48b",
+      "strip_num": 48.0,
+      "base_strip_num": 48,
+      "points": 72,
+      "universe": 93,
+      "dmx_channel": 295,
+      "x": 84.0,
+      "y": 95.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 48.5b",
+      "strip_num": 48.5,
+      "base_strip_num": 48,
+      "points": 75,
+      "universe": 94,
+      "dmx_channel": 1,
+      "x": 24.0,
+      "y": 95.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 49b",
+      "strip_num": 49.0,
+      "base_strip_num": 49,
+      "points": 95,
+      "universe": 94,
+      "dmx_channel": 226,
+      "x": 25.0,
+      "y": 97.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 49.5b",
+      "strip_num": 49.5,
+      "base_strip_num": 49,
+      "points": 50,
+      "universe": 95,
+      "dmx_channel": 1,
+      "x": 101.0,
+      "y": 97.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 50b",
+      "strip_num": 50.0,
+      "base_strip_num": 50,
+      "points": 143,
+      "universe": 96,
+      "dmx_channel": 1,
+      "x": 26.0,
+      "y": 99.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 51b",
+      "strip_num": 51.0,
+      "base_strip_num": 51,
+      "points": 27,
+      "universe": 96,
+      "dmx_channel": 430,
+      "x": 27.0,
+      "y": 101.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 51.5b",
+      "strip_num": 51.5,
+      "base_strip_num": 51,
+      "points": 112,
+      "universe": 97,
+      "dmx_channel": 1,
+      "x": 48.6,
+      "y": 101.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 52b",
+      "strip_num": 52.0,
+      "base_strip_num": 52,
+      "points": 58,
+      "universe": 97,
+      "dmx_channel": 337,
+      "x": 90.6,
+      "y": 103.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 52.5b",
+      "strip_num": 52.5,
+      "base_strip_num": 52,
+      "points": 77,
+      "universe": 98,
+      "dmx_channel": 1,
+      "x": 29.0,
+      "y": 103.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 53b",
+      "strip_num": 53.0,
+      "base_strip_num": 53,
+      "points": 93,
+      "universe": 98,
+      "dmx_channel": 232,
+      "x": 30.0,
+      "y": 105.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 53.5b",
+      "strip_num": 53.5,
+      "base_strip_num": 53,
+      "points": 40,
+      "universe": 99,
+      "dmx_channel": 1,
+      "x": 104.4,
+      "y": 105.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 54b",
+      "strip_num": 54.0,
+      "base_strip_num": 54,
+      "points": 129,
+      "universe": 99,
+      "dmx_channel": 121,
+      "x": 31.0,
+      "y": 107.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 55b",
+      "strip_num": 55.0,
+      "base_strip_num": 55,
+      "points": 125,
+      "universe": 99,
+      "dmx_channel": 508,
+      "x": 33.0,
+      "y": 109.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": true
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": true
+    },
+    "overflow_fix": {
+      "strip": "Strip 55b",
+      "strip_num": 55.0,
+      "base_strip_num": 55,
+      "original_points": 125,
+      "universe": 99,
+      "dmx_channel": 508,
+      "overflow_leds": 123,
+      "correct_flow": "right\u2192left",
+      "split": {
+        "original": {
+          "points": 1,
+          "x": 33.0,
+          "universe": 99,
+          "dmx_channel": 508,
+          "reverse": true
+        },
+        "overflow": {
+          "label": "Strip 55b.5",
+          "points": 124,
+          "x": 32.2,
+          "universe": 100,
+          "dmx_channel": 1,
+          "reverse": false,
+          "direction": "left",
+          "offset": 0.7999999999999972
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 56b",
+      "strip_num": 56.0,
+      "base_strip_num": 56,
+      "points": 46,
+      "universe": 100,
+      "dmx_channel": 373,
+      "x": 94.0,
+      "y": 111.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 56.5b",
+      "strip_num": 56.5,
+      "base_strip_num": 56,
+      "points": 75,
+      "universe": 101,
+      "dmx_channel": 1,
+      "x": 34.0,
+      "y": 111.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 57b",
+      "strip_num": 57.0,
+      "base_strip_num": 57,
+      "points": 115,
+      "universe": 102,
+      "dmx_channel": 1,
+      "x": 37.0,
+      "y": 112.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 58b",
+      "strip_num": 58.0,
+      "base_strip_num": 58,
+      "points": 55,
+      "universe": 102,
+      "dmx_channel": 346,
+      "x": 82.8,
+      "y": 114.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 58.5b",
+      "strip_num": 58.5,
+      "base_strip_num": 58,
+      "points": 56,
+      "universe": 103,
+      "dmx_channel": 1,
+      "x": 38.0,
+      "y": 114.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 59b",
+      "strip_num": 59.0,
+      "base_strip_num": 59,
+      "points": 105,
+      "universe": 103,
+      "dmx_channel": 169,
+      "x": 41.0,
+      "y": 116.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 60b",
+      "strip_num": 60.0,
+      "base_strip_num": 60,
+      "points": 9,
+      "universe": 103,
+      "dmx_channel": 484,
+      "x": 115.0,
+      "y": 118.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 60.5b",
+      "strip_num": 60.5,
+      "base_strip_num": 60,
+      "points": 90,
+      "universe": 104,
+      "dmx_channel": 1,
+      "x": 43.0,
+      "y": 118.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 61b",
+      "strip_num": 61.0,
+      "base_strip_num": 61,
+      "points": 80,
+      "universe": 104,
+      "dmx_channel": 271,
+      "x": 45.0,
+      "y": 120.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 61.5b",
+      "strip_num": 61.5,
+      "base_strip_num": 61,
+      "points": 13,
+      "universe": 105,
+      "dmx_channel": 1,
+      "x": 109.0,
+      "y": 120.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 62b",
+      "strip_num": 62.0,
+      "base_strip_num": 62,
+      "points": 85,
+      "universe": 105,
+      "dmx_channel": 40,
+      "x": 48.0,
+      "y": 122.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 63b",
+      "strip_num": 63.0,
+      "base_strip_num": 63,
+      "points": 72,
+      "universe": 105,
+      "dmx_channel": 295,
+      "x": 51.0,
+      "y": 124.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 63.5b",
+      "strip_num": 63.5,
+      "base_strip_num": 63,
+      "points": 5,
+      "universe": 106,
+      "dmx_channel": 1,
+      "x": 108.6,
+      "y": 124.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 64b",
+      "strip_num": 64.0,
+      "base_strip_num": 64,
+      "points": 67,
+      "universe": 106,
+      "dmx_channel": 16,
+      "x": 55.0,
+      "y": 126.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 65b",
+      "strip_num": 65.0,
+      "base_strip_num": 65,
+      "points": 53,
+      "universe": 106,
+      "dmx_channel": 217,
+      "x": 61.0,
+      "y": 128.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 66b",
+      "strip_num": 66.0,
+      "base_strip_num": 66,
+      "points": 39,
+      "universe": 106,
+      "dmx_channel": 376,
+      "x": 66.0,
+      "y": 130.0,
+      "z": -30.0,
+      "current_reverse": false,
+      "correct_reverse": false,
+      "correct_flow": "left\u2192right",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 67b",
+      "strip_num": 67.0,
+      "base_strip_num": 67,
+      "points": 6,
+      "universe": 106,
+      "dmx_channel": 493,
+      "x": 74.0,
+      "y": 131.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  },
+  {
+    "timestamp": "2025-08-25 01:36:51",
+    "strip_data": {
+      "label": "Strip 67.5b",
+      "strip_num": 67.5,
+      "base_strip_num": 67,
+      "points": 13,
+      "universe": 107,
+      "dmx_channel": 1,
+      "x": 78.8,
+      "y": 131.0,
+      "z": -30.0,
+      "current_reverse": true,
+      "correct_reverse": true,
+      "correct_flow": "right\u2192left",
+      "reverse_needs_fix": false,
+      "overflow_needs_fix": false
+    },
+    "fixes_needed": {
+      "reverse": false,
+      "overflow": false
+    }
+  }
+]
