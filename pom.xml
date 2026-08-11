@@ -112,25 +112,6 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-enforcer-plugin</artifactId>
 					<version>${maven-enforcer-plugin.version}</version>
-					<executions>
-						<execution>
-							<id>enforce-maven</id>
-							<goals>
-								<goal>enforce</goal>
-							</goals>
-							<configuration>
-								<rules>
-									<requireMavenVersion>
-										<version>3.3.1</version> <!-- Specify your minimum Maven version here -->
-										<message>Maven version 3.3.1 or higher is required to use
-											${maven.multiModuleProjectDirectory} property
-										</message>
-									</requireMavenVersion>
-								</rules>
-								<fail>true</fail>
-							</configuration>
-						</execution>
-					</executions>
 				</plugin>
 				<plugin>
 					<groupId>com.diffplug.spotless</groupId>
@@ -146,6 +127,41 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>${maven-enforcer-plugin.version}</version>
+				<executions>
+					<execution>
+						<id>enforce-build-environment</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireMavenVersion>
+									<version>3.3.1</version>
+									<message>Maven version 3.3.1 or higher is required to use
+										${maven.multiModuleProjectDirectory} property
+									</message>
+								</requireMavenVersion>
+								<requireJavaVersion>
+									<version>[21,22)</version>
+									<message>
+										This project must be built with Java 21. Newer JDKs can cause Error Prone
+										to crash during compilation. On macOS, run
+										./mvnw-te.sh ... or export JAVA_HOME=$(/usr/libexec/java_home -v 21)
+										before invoking Maven.
+									</message>
+								</requireJavaVersion>
+							</rules>
+							<fail>true</fail>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
