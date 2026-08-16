@@ -29,9 +29,12 @@ resources/model/
 .devSwitch
 TD/Utils/Backup/
 te-app/Projects/Test*.lxp
+te-app/Projects/*.lxp.backup_*
 .lxpreferences
 .lxmidi
 Logs/
+*.pcap
+*.pcapng
 *.onnx
 /te-app/resources/shaders/cache/
 .claude/

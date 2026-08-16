@@ -1,0 +1,1784 @@
+{
+  "description": "Pre-channel-fix Pacman strip byteOrder baseline used to verify and repair the 2026 Art-Net one-byte phase migration.",
+  "source": "BM2024_Pacman.lxp.backup_byte_order_migration_20260816_032945",
+  "created": "2026-08-16",
+  "stripCount": 222,
+  "strips": [
+    {
+      "label": "Strip 1",
+      "universe": 0,
+      "dmxChannel": 1,
+      "points": 25,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 2",
+      "universe": 0,
+      "dmxChannel": 76,
+      "points": 45,
+      "byteOrder": "RBG",
+      "reverse": false
+    },
+    {
+      "label": "Strip 3",
+      "universe": 0,
+      "dmxChannel": 211,
+      "points": 57,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 4",
+      "universe": 0,
+      "dmxChannel": 382,
+      "points": 43,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 4.5",
+      "universe": 1,
+      "dmxChannel": 1,
+      "points": 24,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 5",
+      "universe": 1,
+      "dmxChannel": 73,
+      "points": 75,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 6",
+      "universe": 1,
+      "dmxChannel": 298,
+      "points": 71,
+      "byteOrder": "RBG",
+      "reverse": false
+    },
+    {
+      "label": "Strip 6.5",
+      "universe": 2,
+      "dmxChannel": 1,
+      "points": 14,
+      "byteOrder": "RBG",
+      "reverse": false
+    },
+    {
+      "label": "Strip 7",
+      "universe": 2,
+      "dmxChannel": 43,
+      "points": 93,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 8",
+      "universe": 2,
+      "dmxChannel": 322,
+      "points": 63,
+      "byteOrder": "RBG",
+      "reverse": false
+    },
+    {
+      "label": "Strip 8.5",
+      "universe": 3,
+      "dmxChannel": 1,
+      "points": 36,
+      "byteOrder": "RBG",
+      "reverse": false
+    },
+    {
+      "label": "Strip 9",
+      "universe": 3,
+      "dmxChannel": 109,
+      "points": 107,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 10",
+      "universe": 3,
+      "dmxChannel": 430,
+      "points": 27,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 10.5",
+      "universe": 4,
+      "dmxChannel": 1,
+      "points": 86,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 11",
+      "universe": 4,
+      "dmxChannel": 259,
+      "points": 84,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 11.5",
+      "universe": 5,
+      "dmxChannel": 1,
+      "points": 35,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 12",
+      "universe": 5,
+      "dmxChannel": 106,
+      "points": 123,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 13",
+      "universe": 6,
+      "dmxChannel": 1,
+      "points": 127,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 14",
+      "universe": 6,
+      "dmxChannel": 382,
+      "points": 43,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 14.5",
+      "universe": 7,
+      "dmxChannel": 1,
+      "points": 88,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 15",
+      "universe": 7,
+      "dmxChannel": 265,
+      "points": 82,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 15.5",
+      "universe": 8,
+      "dmxChannel": 1,
+      "points": 53,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 16",
+      "universe": 8,
+      "dmxChannel": 160,
+      "points": 117,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 16.5",
+      "universe": 9,
+      "dmxChannel": 1,
+      "points": 20,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 17",
+      "universe": 9,
+      "dmxChannel": 61,
+      "points": 141,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 18",
+      "universe": 9,
+      "dmxChannel": 484,
+      "points": 9,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 18.5",
+      "universe": 10,
+      "dmxChannel": 1,
+      "points": 134,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 19",
+      "universe": 10,
+      "dmxChannel": 403,
+      "points": 36,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 19.5",
+      "universe": 11,
+      "dmxChannel": 1,
+      "points": 109,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 20",
+      "universe": 12,
+      "dmxChannel": 1,
+      "points": 149,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 21",
+      "universe": 12,
+      "dmxChannel": 448,
+      "points": 21,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 21.5",
+      "universe": 13,
+      "dmxChannel": 1,
+      "points": 130,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 22",
+      "universe": 13,
+      "dmxChannel": 391,
+      "points": 40,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 22.5",
+      "universe": 14,
+      "dmxChannel": 1,
+      "points": 113,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 23",
+      "universe": 14,
+      "dmxChannel": 340,
+      "points": 57,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 23.5",
+      "universe": 15,
+      "dmxChannel": 1,
+      "points": 98,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 24",
+      "universe": 15,
+      "dmxChannel": 295,
+      "points": 72,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 24.5",
+      "universe": 16,
+      "dmxChannel": 1,
+      "points": 85,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 25",
+      "universe": 16,
+      "dmxChannel": 256,
+      "points": 85,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 25.5",
+      "universe": 17,
+      "dmxChannel": 1,
+      "points": 72,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 26",
+      "universe": 18,
+      "dmxChannel": 1,
+      "points": 159,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 27",
+      "universe": 18,
+      "dmxChannel": 478,
+      "points": 11,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 27.5",
+      "universe": 19,
+      "dmxChannel": 1,
+      "points": 150,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 28",
+      "universe": 19,
+      "dmxChannel": 451,
+      "points": 20,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 28.5",
+      "universe": 20,
+      "dmxChannel": 1,
+      "points": 141,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 29",
+      "universe": 20,
+      "dmxChannel": 424,
+      "points": 29,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 29.5",
+      "universe": 21,
+      "dmxChannel": 1,
+      "points": 134,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 30",
+      "universe": 21,
+      "dmxChannel": 403,
+      "points": 36,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 30.5",
+      "universe": 22,
+      "dmxChannel": 1,
+      "points": 127,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 31",
+      "universe": 22,
+      "dmxChannel": 382,
+      "points": 43,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 31.5",
+      "universe": 23,
+      "dmxChannel": 1,
+      "points": 120,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 32",
+      "universe": 24,
+      "dmxChannel": 1,
+      "points": 163,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 33",
+      "universe": 24,
+      "dmxChannel": 490,
+      "points": 7,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 33.5",
+      "universe": 25,
+      "dmxChannel": 1,
+      "points": 156,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 34",
+      "universe": 25,
+      "dmxChannel": 469,
+      "points": 14,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 34.5",
+      "universe": 26,
+      "dmxChannel": 1,
+      "points": 149,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 35",
+      "universe": 26,
+      "dmxChannel": 448,
+      "points": 21,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 35.5",
+      "universe": 27,
+      "dmxChannel": 1,
+      "points": 142,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 36",
+      "universe": 27,
+      "dmxChannel": 427,
+      "points": 28,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 36.5",
+      "universe": 28,
+      "dmxChannel": 1,
+      "points": 135,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 37",
+      "universe": 28,
+      "dmxChannel": 406,
+      "points": 35,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 37.5",
+      "universe": 29,
+      "dmxChannel": 1,
+      "points": 128,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 38",
+      "universe": 30,
+      "dmxChannel": 1,
+      "points": 163,
+      "byteOrder": "RBG",
+      "reverse": false
+    },
+    {
+      "label": "Strip 39",
+      "universe": 30,
+      "dmxChannel": 490,
+      "points": 7,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 39.5",
+      "universe": 31,
+      "dmxChannel": 1,
+      "points": 154,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 40",
+      "universe": 31,
+      "dmxChannel": 463,
+      "points": 16,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 40.5",
+      "universe": 32,
+      "dmxChannel": 1,
+      "points": 145,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 41",
+      "universe": 32,
+      "dmxChannel": 436,
+      "points": 25,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 41.5",
+      "universe": 33,
+      "dmxChannel": 1,
+      "points": 134,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 42",
+      "universe": 33,
+      "dmxChannel": 403,
+      "points": 36,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 42.5",
+      "universe": 34,
+      "dmxChannel": 1,
+      "points": 123,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 43",
+      "universe": 34,
+      "dmxChannel": 370,
+      "points": 47,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 43.5",
+      "universe": 35,
+      "dmxChannel": 1,
+      "points": 110,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 44",
+      "universe": 36,
+      "dmxChannel": 1,
+      "points": 155,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 45",
+      "universe": 36,
+      "dmxChannel": 466,
+      "points": 15,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 45.5",
+      "universe": 37,
+      "dmxChannel": 1,
+      "points": 138,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 46",
+      "universe": 37,
+      "dmxChannel": 415,
+      "points": 32,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 46.5",
+      "universe": 38,
+      "dmxChannel": 1,
+      "points": 119,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 47",
+      "universe": 38,
+      "dmxChannel": 358,
+      "points": 51,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 47.5",
+      "universe": 39,
+      "dmxChannel": 1,
+      "points": 98,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 48",
+      "universe": 39,
+      "dmxChannel": 295,
+      "points": 72,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 48.5",
+      "universe": 40,
+      "dmxChannel": 1,
+      "points": 75,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 49",
+      "universe": 40,
+      "dmxChannel": 226,
+      "points": 95,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 49.5",
+      "universe": 41,
+      "dmxChannel": 1,
+      "points": 50,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 50",
+      "universe": 42,
+      "dmxChannel": 1,
+      "points": 143,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 51",
+      "universe": 42,
+      "dmxChannel": 430,
+      "points": 27,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 51.5",
+      "universe": 43,
+      "dmxChannel": 1,
+      "points": 112,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 52",
+      "universe": 43,
+      "dmxChannel": 337,
+      "points": 58,
+      "byteOrder": "RBG",
+      "reverse": false
+    },
+    {
+      "label": "Strip 52.5",
+      "universe": 44,
+      "dmxChannel": 1,
+      "points": 77,
+      "byteOrder": "RBG",
+      "reverse": false
+    },
+    {
+      "label": "Strip 53",
+      "universe": 44,
+      "dmxChannel": 232,
+      "points": 93,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 53.5",
+      "universe": 45,
+      "dmxChannel": 1,
+      "points": 40,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 54",
+      "universe": 45,
+      "dmxChannel": 121,
+      "points": 129,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 55",
+      "universe": 45,
+      "dmxChannel": 508,
+      "points": 125,
+      "byteOrder": "RGB",
+      "reverse": true
+    },
+    {
+      "label": "Strip 56",
+      "universe": 46,
+      "dmxChannel": 373,
+      "points": 46,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 56.5",
+      "universe": 47,
+      "dmxChannel": 1,
+      "points": 75,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 57",
+      "universe": 48,
+      "dmxChannel": 1,
+      "points": 115,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 58",
+      "universe": 48,
+      "dmxChannel": 346,
+      "points": 55,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 58.5",
+      "universe": 49,
+      "dmxChannel": 1,
+      "points": 56,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 59",
+      "universe": 49,
+      "dmxChannel": 169,
+      "points": 105,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 60",
+      "universe": 49,
+      "dmxChannel": 484,
+      "points": 9,
+      "byteOrder": "RBG",
+      "reverse": false
+    },
+    {
+      "label": "Strip 60.5",
+      "universe": 50,
+      "dmxChannel": 1,
+      "points": 90,
+      "byteOrder": "RBG",
+      "reverse": false
+    },
+    {
+      "label": "Strip 61",
+      "universe": 50,
+      "dmxChannel": 271,
+      "points": 80,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 61.5",
+      "universe": 51,
+      "dmxChannel": 1,
+      "points": 13,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 62",
+      "universe": 51,
+      "dmxChannel": 40,
+      "points": 85,
+      "byteOrder": "RBG",
+      "reverse": false
+    },
+    {
+      "label": "Strip 63",
+      "universe": 51,
+      "dmxChannel": 295,
+      "points": 72,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 63.5",
+      "universe": 52,
+      "dmxChannel": 1,
+      "points": 5,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 64",
+      "universe": 52,
+      "dmxChannel": 16,
+      "points": 67,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 65",
+      "universe": 52,
+      "dmxChannel": 217,
+      "points": 53,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 66",
+      "universe": 52,
+      "dmxChannel": 376,
+      "points": 39,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 67",
+      "universe": 52,
+      "dmxChannel": 493,
+      "points": 6,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 67.5",
+      "universe": 53,
+      "dmxChannel": 1,
+      "points": 13,
+      "byteOrder": "RBG",
+      "reverse": true
+    },
+    {
+      "label": "Strip 1b",
+      "universe": 54,
+      "dmxChannel": 1,
+      "points": 25,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 2b",
+      "universe": 54,
+      "dmxChannel": 76,
+      "points": 43,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 3b",
+      "universe": 54,
+      "dmxChannel": 205,
+      "points": 57,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 4b",
+      "universe": 54,
+      "dmxChannel": 376,
+      "points": 45,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 4.5b",
+      "universe": 55,
+      "dmxChannel": 1,
+      "points": 22,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 5b",
+      "universe": 55,
+      "dmxChannel": 67,
+      "points": 75,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 6b",
+      "universe": 55,
+      "dmxChannel": 292,
+      "points": 73,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 6.5b",
+      "universe": 56,
+      "dmxChannel": 1,
+      "points": 12,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 7b",
+      "universe": 56,
+      "dmxChannel": 37,
+      "points": 93,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 8b",
+      "universe": 56,
+      "dmxChannel": 316,
+      "points": 65,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 8.5b",
+      "universe": 57,
+      "dmxChannel": 1,
+      "points": 36,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 9b",
+      "universe": 57,
+      "dmxChannel": 103,
+      "points": 107,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 10b",
+      "universe": 57,
+      "dmxChannel": 424,
+      "points": 29,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 10.5b",
+      "universe": 58,
+      "dmxChannel": 1,
+      "points": 84,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 11b",
+      "universe": 58,
+      "dmxChannel": 253,
+      "points": 86,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 11.5b",
+      "universe": 59,
+      "dmxChannel": 1,
+      "points": 33,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 12b",
+      "universe": 59,
+      "dmxChannel": 100,
+      "points": 123,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 13b",
+      "universe": 60,
+      "dmxChannel": 1,
+      "points": 127,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 14b",
+      "universe": 60,
+      "dmxChannel": 382,
+      "points": 43,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 14.5b",
+      "universe": 61,
+      "dmxChannel": 1,
+      "points": 88,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 15b",
+      "universe": 61,
+      "dmxChannel": 265,
+      "points": 82,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 15.5b",
+      "universe": 62,
+      "dmxChannel": 1,
+      "points": 53,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 16b",
+      "universe": 62,
+      "dmxChannel": 160,
+      "points": 117,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 16.5b",
+      "universe": 63,
+      "dmxChannel": 1,
+      "points": 20,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 17b",
+      "universe": 63,
+      "dmxChannel": 61,
+      "points": 141,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 18b",
+      "universe": 63,
+      "dmxChannel": 484,
+      "points": 9,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 18.5b",
+      "universe": 64,
+      "dmxChannel": 1,
+      "points": 134,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 19b",
+      "universe": 64,
+      "dmxChannel": 403,
+      "points": 36,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 19.5b",
+      "universe": 65,
+      "dmxChannel": 1,
+      "points": 109,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 20b",
+      "universe": 66,
+      "dmxChannel": 1,
+      "points": 149,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 21b",
+      "universe": 66,
+      "dmxChannel": 448,
+      "points": 21,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 21.5b",
+      "universe": 67,
+      "dmxChannel": 1,
+      "points": 130,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 22b",
+      "universe": 67,
+      "dmxChannel": 391,
+      "points": 40,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 22.5b",
+      "universe": 68,
+      "dmxChannel": 1,
+      "points": 113,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 23b",
+      "universe": 68,
+      "dmxChannel": 340,
+      "points": 57,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 23.5b",
+      "universe": 69,
+      "dmxChannel": 1,
+      "points": 98,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 24b",
+      "universe": 69,
+      "dmxChannel": 295,
+      "points": 72,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 24.5b",
+      "universe": 70,
+      "dmxChannel": 1,
+      "points": 85,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 25b",
+      "universe": 70,
+      "dmxChannel": 256,
+      "points": 85,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 25.5b",
+      "universe": 71,
+      "dmxChannel": 1,
+      "points": 72,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 26b",
+      "universe": 72,
+      "dmxChannel": 1,
+      "points": 159,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 27b",
+      "universe": 72,
+      "dmxChannel": 478,
+      "points": 11,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 27.5b",
+      "universe": 73,
+      "dmxChannel": 1,
+      "points": 150,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 28b",
+      "universe": 73,
+      "dmxChannel": 451,
+      "points": 20,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 28.5b",
+      "universe": 74,
+      "dmxChannel": 1,
+      "points": 141,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 29b",
+      "universe": 74,
+      "dmxChannel": 424,
+      "points": 29,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 29.5b",
+      "universe": 75,
+      "dmxChannel": 1,
+      "points": 134,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 30b",
+      "universe": 75,
+      "dmxChannel": 403,
+      "points": 36,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 30.5b",
+      "universe": 76,
+      "dmxChannel": 1,
+      "points": 127,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 31b",
+      "universe": 76,
+      "dmxChannel": 382,
+      "points": 43,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 31.5b",
+      "universe": 77,
+      "dmxChannel": 1,
+      "points": 120,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 32b",
+      "universe": 78,
+      "dmxChannel": 1,
+      "points": 163,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 33b",
+      "universe": 78,
+      "dmxChannel": 490,
+      "points": 7,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 33.5b",
+      "universe": 79,
+      "dmxChannel": 1,
+      "points": 156,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 34b",
+      "universe": 79,
+      "dmxChannel": 469,
+      "points": 14,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 34.5b",
+      "universe": 80,
+      "dmxChannel": 1,
+      "points": 149,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 35b",
+      "universe": 80,
+      "dmxChannel": 448,
+      "points": 21,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 35.5b",
+      "universe": 81,
+      "dmxChannel": 1,
+      "points": 142,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 36b",
+      "universe": 81,
+      "dmxChannel": 427,
+      "points": 28,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 36.5b",
+      "universe": 82,
+      "dmxChannel": 1,
+      "points": 135,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 37b",
+      "universe": 82,
+      "dmxChannel": 406,
+      "points": 35,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 37.5b",
+      "universe": 83,
+      "dmxChannel": 1,
+      "points": 128,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 38b",
+      "universe": 84,
+      "dmxChannel": 1,
+      "points": 163,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 39b",
+      "universe": 84,
+      "dmxChannel": 490,
+      "points": 7,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 39.5b",
+      "universe": 85,
+      "dmxChannel": 1,
+      "points": 154,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 40b",
+      "universe": 85,
+      "dmxChannel": 463,
+      "points": 16,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 40.5b",
+      "universe": 86,
+      "dmxChannel": 1,
+      "points": 145,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 41b",
+      "universe": 86,
+      "dmxChannel": 436,
+      "points": 25,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 41.5b",
+      "universe": 87,
+      "dmxChannel": 1,
+      "points": 134,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 42b",
+      "universe": 87,
+      "dmxChannel": 403,
+      "points": 36,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 42.5b",
+      "universe": 88,
+      "dmxChannel": 1,
+      "points": 123,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 43b",
+      "universe": 88,
+      "dmxChannel": 370,
+      "points": 47,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 43.5b",
+      "universe": 89,
+      "dmxChannel": 1,
+      "points": 110,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 44b",
+      "universe": 90,
+      "dmxChannel": 1,
+      "points": 155,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 45b",
+      "universe": 90,
+      "dmxChannel": 466,
+      "points": 15,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 45.5b",
+      "universe": 91,
+      "dmxChannel": 1,
+      "points": 138,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 46b",
+      "universe": 91,
+      "dmxChannel": 415,
+      "points": 32,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 46.5b",
+      "universe": 92,
+      "dmxChannel": 1,
+      "points": 119,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 47b",
+      "universe": 92,
+      "dmxChannel": 358,
+      "points": 51,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 47.5b",
+      "universe": 93,
+      "dmxChannel": 1,
+      "points": 98,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 48b",
+      "universe": 93,
+      "dmxChannel": 295,
+      "points": 72,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 48.5b",
+      "universe": 94,
+      "dmxChannel": 1,
+      "points": 75,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 49b",
+      "universe": 94,
+      "dmxChannel": 226,
+      "points": 95,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 49.5b",
+      "universe": 95,
+      "dmxChannel": 1,
+      "points": 50,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 50b",
+      "universe": 96,
+      "dmxChannel": 1,
+      "points": 143,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 51b",
+      "universe": 96,
+      "dmxChannel": 430,
+      "points": 27,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 51.5b",
+      "universe": 97,
+      "dmxChannel": 1,
+      "points": 112,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 52b",
+      "universe": 97,
+      "dmxChannel": 337,
+      "points": 58,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 52.5b",
+      "universe": 98,
+      "dmxChannel": 1,
+      "points": 77,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 53b",
+      "universe": 98,
+      "dmxChannel": 232,
+      "points": 93,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 53.5b",
+      "universe": 99,
+      "dmxChannel": 1,
+      "points": 40,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 54b",
+      "universe": 99,
+      "dmxChannel": 121,
+      "points": 129,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 55b",
+      "universe": 99,
+      "dmxChannel": 508,
+      "points": 125,
+      "byteOrder": "RGB",
+      "reverse": false
+    },
+    {
+      "label": "Strip 56b",
+      "universe": 100,
+      "dmxChannel": 373,
+      "points": 46,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 56.5b",
+      "universe": 101,
+      "dmxChannel": 1,
+      "points": 75,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 57b",
+      "universe": 102,
+      "dmxChannel": 1,
+      "points": 115,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 58b",
+      "universe": 102,
+      "dmxChannel": 346,
+      "points": 55,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 58.5b",
+      "universe": 103,
+      "dmxChannel": 1,
+      "points": 56,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 59b",
+      "universe": 103,
+      "dmxChannel": 169,
+      "points": 105,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 60b",
+      "universe": 103,
+      "dmxChannel": 484,
+      "points": 9,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 60.5b",
+      "universe": 104,
+      "dmxChannel": 1,
+      "points": 90,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 61b",
+      "universe": 104,
+      "dmxChannel": 271,
+      "points": 80,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 61.5b",
+      "universe": 105,
+      "dmxChannel": 1,
+      "points": 13,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 62b",
+      "universe": 105,
+      "dmxChannel": 40,
+      "points": 85,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 63b",
+      "universe": 105,
+      "dmxChannel": 295,
+      "points": 72,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 63.5b",
+      "universe": 106,
+      "dmxChannel": 1,
+      "points": 5,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 64b",
+      "universe": 106,
+      "dmxChannel": 16,
+      "points": 67,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 65b",
+      "universe": 106,
+      "dmxChannel": 217,
+      "points": 53,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 66b",
+      "universe": 106,
+      "dmxChannel": 376,
+      "points": 39,
+      "byteOrder": "GBR",
+      "reverse": true
+    },
+    {
+      "label": "Strip 67b",
+      "universe": 106,
+      "dmxChannel": 493,
+      "points": 6,
+      "byteOrder": "GBR",
+      "reverse": false
+    },
+    {
+      "label": "Strip 67.5b",
+      "universe": 107,
+      "dmxChannel": 1,
+      "points": 13,
+      "byteOrder": "GBR",
+      "reverse": false
+    }
+  ]
+}

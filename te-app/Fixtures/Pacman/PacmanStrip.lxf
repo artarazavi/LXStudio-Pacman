@@ -56,7 +56,7 @@
     { enabled: "$hasOutput",
       host: "$host",
       universe: "$universe",
-      channel: "$dmxChannel",
+      channel: "$dmxChannel-1",
       protocol: "artnet", 
       sequenceEnabled: "$artnetSequence",
       reverse: "$reverse",
