@@ -102,18 +102,26 @@ First, you'll need an IDE (editor). IntelliJ Community Edition is the best free 
    
 2. Clean and Install the Maven dependencies (from inside `LXStudio-TE` directory):
 
+   Recommended new way:
+
    ```sh
    ./mvnw-te.sh clean -U package && ./mvnw-te.sh install
    ```
 
-   If you prefer plain `mvn`, first run:
+   Old way:
+
+   ```sh
+   mvn clean -U package && mvn install
+   ```
+
+   If you use the old plain-`mvn` flow, first run:
 
    ```sh
    export JAVA_HOME=$(/usr/libexec/java_home -v 21)
    export PATH="$JAVA_HOME/bin:$PATH"
    ```
 
-   `./mvnw-te.sh` also bootstraps the archived JogAmp `2.4.0-rc-20230123` jars that this repo expects. Those artifacts are no longer available in normal Maven repositories, so using the helper script avoids a later `gluegen-rt-main` / `jogl-all-main` dependency failure.
+   `./mvnw-te.sh` is the safer new path because it also bootstraps the archived JogAmp `2.4.0-rc-20230123` jars that this repo expects. Those artifacts are no longer available in normal Maven repositories, so using the helper script avoids a later `gluegen-rt-main` / `jogl-all-main` dependency failure.
 
 3. Open the IntelliJ app. On the initial screen, click Open, and select the `LXStudio-TE` directory you cloned.
 
