@@ -63,6 +63,16 @@ Verify your installation:
 /Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home/bin/java --version
 ```
 
+Make sure Maven is also using Java 21, not a newer Homebrew JDK:
+
+```sh
+export JAVA_HOME=$(/usr/libexec/java_home -v 21)
+export PATH="$JAVA_HOME/bin:$PATH"
+mvn -version
+```
+
+`mvn -version` should report `Java version: 21...`. If it shows 22+ or 26, the build can fail inside Error Prone even though `java --version` looks fine.
+
 After installing the Temurin JDK, we recommend installing and building `maven`, a package manager for our project:
 
 ```sh
@@ -93,8 +103,17 @@ First, you'll need an IDE (editor). IntelliJ Community Edition is the best free 
 2. Clean and Install the Maven dependencies (from inside `LXStudio-TE` directory):
 
    ```sh
-   mvn clean -U package && mvn install
+   ./mvnw-te.sh clean -U package && ./mvnw-te.sh install
    ```
+
+   If you prefer plain `mvn`, first run:
+
+   ```sh
+   export JAVA_HOME=$(/usr/libexec/java_home -v 21)
+   export PATH="$JAVA_HOME/bin:$PATH"
+   ```
+
+   `./mvnw-te.sh` also bootstraps the archived JogAmp `2.4.0-rc-20230123` jars that this repo expects. Those artifacts are no longer available in normal Maven repositories, so using the helper script avoids a later `gluegen-rt-main` / `jogl-all-main` dependency failure.
 
 3. Open the IntelliJ app. On the initial screen, click Open, and select the `LXStudio-TE` directory you cloned.
 
@@ -106,20 +125,46 @@ First, you'll need an IDE (editor). IntelliJ Community Edition is the best free 
       2. Or, if that JDK is not listed, you can also click the '+' and then select "Add JDK..."
          1. Navigate to `/Library/Java/JavaVirtualMachines/temurin-21.jdk`
          2. Select `temurin-21.jdk`
+      3. If IntelliJ auto-added another SDK such as `26` that points at a Homebrew OpenJDK path, delete it.
+         1. In the left SDK list, click `26`
+         2. Click the `-` button at the top
+         3. Keep `temurin-21`
          
          ![Add JDK from disk](assets/IDE-Setup/AddJDK.png)
 
    2. Project Settings → Project
-      1. Select the Temurin 21 JDK
+      1. Set `SDK` to `temurin-21`
+      2. Set `Language level` to `SDK default` or `21`
+      3. Leave `Compiler output` blank
+      4. Click `Apply`, then `OK`
          ![Project SDK](assets/IDE-Setup/SelectProject.png)
 
-5. Select "Titanic's End" in the top bar (in the dropdown) if you want to use the
+   Quick sanity check:
+
+   - `SDK`: `temurin-21`
+   - `Language level`: `SDK default` or `21`
+   - `Compiler output`: blank
+
+5. Reimport the Maven project inside IntelliJ so the IDE picks up the repo's generated modules, dependencies, and run configuration state.
+
+   1. Open the Maven tool window:
+      1. Look at the right edge of the IntelliJ window for a vertical tab labeled `Maven`
+      2. If you do not see it, use `View → Tool Windows → Maven`
+   2. Click the refresh / reload icon in the Maven panel
+
+   Why this matters:
+
+   - Maven is what tells IntelliJ about the multi-module project layout
+   - it reloads dependencies and generated sources
+   - it helps IntelliJ stay aligned with the same build the command line just used
+
+6. Select "Titanic's End" in the top bar (in the dropdown) if you want to use the
    vehicle model.
    ![Play button](assets/IDE-Setup/PlayButton.png)
 
-6. Hit the green arrow "play" button. (If you just want to build, you can hit the hammer.)
+7. Hit the green arrow "play" button. (If you just want to build, you can hit the hammer.)
 
-7. Assuming things work okay, a UI for Chromatik will pop up: Great! Now, you can play with the buttons.
+8. Assuming things work okay, a UI for Chromatik will pop up: Great! Now, you can play with the buttons.
 
 ### Coding Style
 
