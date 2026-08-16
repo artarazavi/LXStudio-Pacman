@@ -405,6 +405,7 @@ public class TEApp extends LXStudio {
 
       // Arta's custom patterns
       lx.registry.addChannelBlend(OverlayBlend.class);
+      lx.registry.addPattern(titanicsend.pattern.arta.PacmanColorCalibratorPattern.class);
       lx.registry.addPattern(titanicsend.pattern.arta.PacmanPattern.class);
       lx.registry.addPattern(titanicsend.pattern.arta.MissPacmanPattern.class);
       lx.registry.addPattern(titanicsend.pattern.arta.PacmanChasePattern.class);
