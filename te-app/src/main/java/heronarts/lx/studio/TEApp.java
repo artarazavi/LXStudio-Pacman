@@ -91,6 +91,7 @@ import titanicsend.lx.DirectorAPCminiMk2;
 import titanicsend.lx.EffectsMiniLab3;
 import titanicsend.model.TEWholeModel;
 import titanicsend.model.TEWholeModelDynamic;
+import titanicsend.lx.blend.OverlayBlend;
 import titanicsend.modulator.dmx.Dmx16bitModulator;
 import titanicsend.modulator.dmx.DmxDirectorColorModulator;
 import titanicsend.modulator.dmx.DmxDualRangeModulator;
@@ -403,6 +404,7 @@ public class TEApp extends LXStudio {
       lx.registry.addPattern(SketchStem.class);
 
       // Arta's custom patterns
+      lx.registry.addChannelBlend(OverlayBlend.class);
       lx.registry.addPattern(titanicsend.pattern.arta.PacmanPattern.class);
       lx.registry.addPattern(titanicsend.pattern.arta.MissPacmanPattern.class);
       lx.registry.addPattern(titanicsend.pattern.arta.PacmanItemsPattern.class);
