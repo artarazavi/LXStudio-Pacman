@@ -407,6 +407,7 @@ public class TEApp extends LXStudio {
       lx.registry.addChannelBlend(OverlayBlend.class);
       lx.registry.addPattern(titanicsend.pattern.arta.PacmanPattern.class);
       lx.registry.addPattern(titanicsend.pattern.arta.MissPacmanPattern.class);
+      lx.registry.addPattern(titanicsend.pattern.arta.PacmanChasePattern.class);
       lx.registry.addPattern(titanicsend.pattern.arta.PacmanItemsPattern.class);
       lx.registry.addPattern(titanicsend.pattern.arta.GhostPattern.class);
       lx.registry.addPattern(titanicsend.pattern.arta.ScaredGhostPattern.class);
