@@ -408,6 +408,7 @@ public class TEApp extends LXStudio {
       lx.registry.addPattern(titanicsend.pattern.arta.PacmanColorCalibratorPattern.class);
       lx.registry.addPattern(titanicsend.pattern.arta.PacmanPattern.class);
       lx.registry.addPattern(titanicsend.pattern.arta.v2.PacmanV2Pattern.class);
+      lx.registry.addPattern(titanicsend.pattern.arta.v2.PacmanV2HardPattern.class);
       lx.registry.addPattern(titanicsend.pattern.arta.MissPacmanPattern.class);
       lx.registry.addPattern(titanicsend.pattern.arta.PacmanChasePattern.class);
       lx.registry.addPattern(titanicsend.pattern.arta.PacmanItemsPattern.class);
