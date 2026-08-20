@@ -31,4 +31,8 @@ public class MidiNames {
   public static final String BOMEBOX_MIDIFIGHTERTWISTER2 = BOMEBOX + "Midi Fighter Twister (2)";
   public static final String BOMEBOX_MIDIFIGHTERTWISTER3 = BOMEBOX + "Midi Fighter Twister (3)";
   public static final String BOMEBOX_MIDIFIGHTERTWISTER4 = BOMEBOX + "Midi Fighter Twister (4)";
+
+  // JP-MINI Bluetooth MIDI controller. CoreMIDI and Java may expose this differently.
+  public static final String JPMINI = "JP-Mini";
+  public static final String JPMINI_BLUETOOTH = "Bluetooth";
 }
