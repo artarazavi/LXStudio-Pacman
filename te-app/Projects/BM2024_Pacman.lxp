@@ -11076,7 +11076,7 @@
       "label": "Engine",
       "compositorMultithreaded": false,
       "networkMultithreaded": false,
-      "framesPerSecond": 40.0,
+      "framesPerSecond": 60.0,
       "speed": 1.0,
       "performanceMode": false,
       "camera-1": false,
