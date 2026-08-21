@@ -16,7 +16,7 @@ public class MissPacmanPattern extends TEAudioPattern {
 
     private static final int GRID_WIDTH = 16;
     private static final int GRID_HEIGHT = 16;
-    private static final double FRAME_MS = 100.0;
+    private static final double FRAME_MS = 165.0;
 
     // Reverse-engineered from the actual GIF frames at:
     // https://media.tenor.com/5IjXWp2X39QAAAAj/pac-man-pac-man.gif
