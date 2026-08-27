@@ -36,9 +36,11 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
     float angle = atan(p.y, p.x);
     float mouthAngle = angleDiff(angle, facing);
     float mouthAngularFeather = 0.012 + cutoutFeather * 1.2;
+    float mouthOvercut = max(feather * 10.0, 0.018);
+    float mouthRadialMask = circleMask(p, radius + mouthOvercut, cutoutFeather);
     float mouthMask =
         smoothstep(mouthHalfAngle + mouthAngularFeather, mouthHalfAngle - mouthAngularFeather, mouthAngle)
-        * bodyMask;
+        * mouthRadialMask;
 
     float finalMask = bodyMask * (1.0 - mouthMask);
 
