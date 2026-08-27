@@ -46,7 +46,7 @@ public class JPMini extends LXMidiSurface {
   private static final int SOLO_ACTIVE_CHANNEL_CC = 24;
   private static final int TOP_BUTTON_TRIGGER_VALUE = 127;
   private static final double AUTOPLAY_INTERVAL_SECONDS = 30;
-  private static final double MASTER_BRIGHTNESS_STEP = 0.10;
+  private static final double MASTER_BRIGHTNESS_STEP = 0.05;
   private static final boolean LOG_RAW_MIDI_MESSAGES = false;
 
   private final Set<String> steppedChannels = new HashSet<>();
