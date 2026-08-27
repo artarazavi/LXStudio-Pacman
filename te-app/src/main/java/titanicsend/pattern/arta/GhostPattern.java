@@ -10,10 +10,11 @@ import heronarts.lx.parameter.LXParameterListener;
 import heronarts.lx.transform.LXVector;
 import titanicsend.color.TEColorType;
 import titanicsend.pattern.TEAudioPattern;
-import titanicsend.util.TEColor;
 
 @LXCategory("Arta")
 public class GhostPattern extends TEAudioPattern {
+    private static final int CLYDE_ORANGE = LXColor.hsb(15.97, 100, 100);
+
     public final CompoundParameter size =
             new CompoundParameter("GSize", 0.6f, 0.1f, 2.0f)
                     .setDescription("Size of the ghost");
@@ -93,7 +94,7 @@ public class GhostPattern extends TEAudioPattern {
             case 0: return LXColor.hsb(0, 100, 100);   // Red (Blinky)
             case 1: return LXColor.hsb(330, 100, 100); // Pink (Pinky)
             case 2: return LXColor.hsb(180, 100, 100); // Cyan (Inky)
-            case 3: return TEColor.ORANGE;             // Orange (Clyde)
+            case 3: return CLYDE_ORANGE;               // Orange (Clyde)
             case 4: return LXColor.hsb(270, 100, 100); // Purple
             case 5: return LXColor.hsb(120, 100, 100); // Green
             default: return LXColor.hsb(0, 100, 100);  // Default red
