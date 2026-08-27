@@ -40319,6 +40319,70 @@
                 "deviceVersion": -1,
                 "effects": [],
                 "defaults": {}
+              },
+              {
+                "id": 472163330,
+                "class": "titanicsend.pattern.arta.PacmanItemsPattern",
+                "internal": {
+                  "modulationColor": 0,
+                  "modulationControlsExpanded": true,
+                  "modulationsExpanded": true,
+                  "expanded": true,
+                  "expandedCue": true,
+                  "expandedAux": true,
+                  "modulationExpanded": false
+                },
+                "parameters": {
+                  "label": "PacmanItems",
+                  "midiFilter/enabled": true,
+                  "midiFilter/channel": 16,
+                  "midiFilter/channel/name": "OMNI",
+                  "midiFilter/minNote": 0,
+                  "midiFilter/noteRange": 128,
+                  "midiFilter/minVelocity": 1,
+                  "midiFilter/velocityRange": 127,
+                  "view": 0,
+                  "viewPriority": 0,
+                  "enabled": true,
+                  "recall": false,
+                  "launch": false,
+                  "compositeBlend": 0,
+                  "compositeLevel": 1.0,
+                  "hasCustomCycleTime": false,
+                  "customCycleTimeSecs": 60.0,
+                  "autoMute": false,
+                  "cueActive": false,
+                  "auxActive": false,
+                  "setDefaults": false,
+                  "ItemSize": 0.8199999928474426,
+                  "FloatSpeed": 0.8500000238418579,
+                  "FloatAmount": 0.25999999046325684,
+                  "Float": true,
+                  "SwitchSec": 1.25,
+                  "PANIC": false,
+                  "compositeMode": 0
+                },
+                "children": {
+                  "modulation": {
+                    "id": 472163331,
+                    "class": "heronarts.lx.modulation.LXModulationEngine",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "Modulation"
+                    },
+                    "children": {},
+                    "modulators": [],
+                    "modulations": [],
+                    "triggers": []
+                  }
+                },
+                "deviceVersion": -1,
+                "effects": [],
+                "defaults": {}
               }
             ]
           },
