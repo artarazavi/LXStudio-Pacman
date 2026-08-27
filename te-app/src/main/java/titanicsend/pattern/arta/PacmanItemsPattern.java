@@ -8,7 +8,6 @@ import heronarts.lx.parameter.CompoundParameter;
 import heronarts.lx.parameter.LXParameterListener;
 import heronarts.lx.transform.LXVector;
 import titanicsend.pattern.TEAudioPattern;
-import titanicsend.util.TEColor;
 
 @LXCategory("Arta")
 public class PacmanItemsPattern extends TEAudioPattern {
@@ -47,6 +46,11 @@ public class PacmanItemsPattern extends TEAudioPattern {
     private static final char WHITE = 'W';
     private static final char BROWN = 'N';
 
+    private static final int ITEM_RED = LXColor.hsb(0, 100, 100);
+    private static final int ITEM_ORANGE = LXColor.hsb(15.97, 100, 100);
+    private static final int ITEM_GREEN = LXColor.hsb(115.07, 100, 100);
+    private static final int ITEM_WHITE = LXColor.hsb(0, 0, 100);
+
     private static final String[] CHERRIES = {
             "................",
             "............NNN.",
@@ -82,7 +86,7 @@ public class PacmanItemsPattern extends TEAudioPattern {
             "...RRWRRWW.R....",
             ".....RRRRRR.....",
             "......NRNN......",
-            ".......R........"
+            ".......RR......."
     };
 
     private static final String[] ORANGE_ITEM = {
@@ -199,15 +203,15 @@ public class PacmanItemsPattern extends TEAudioPattern {
     private int getPixelColor(char pixel) {
         switch (pixel) {
             case RED:
-                return LXColor.hsb(6, 92, 100);
+                return ITEM_RED;
             case ORANGE:
-                return TEColor.ORANGE;
+                return ITEM_ORANGE;
             case GREEN:
-                return LXColor.hsb(130, 95, 100);
+                return ITEM_GREEN;
             case WHITE:
-                return LXColor.hsb(0, 0, 100);
+                return ITEM_WHITE;
             case BROWN:
-                return LXColor.hsb(24, 70, 55);
+                return ITEM_ORANGE;
             case EMPTY:
             default:
                 return -1;
